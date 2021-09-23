@@ -115,7 +115,7 @@ docker system df
 docker events
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как привязать docker к docker-registry?"
 (в новом ssh shell, чтобы параллельно видеть вывод `docker events`)
 ```shell
 docker logout
@@ -123,13 +123,13 @@ open https://hub.docker.com/settings/security # to make Access Token
 docker login -u {{ registry-account }} -p {{ access-token }} # login default hub.docker.com registry
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как закачать новый image в докер?"
 ```shell
 docker image pull alpine
 docker system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как запустить imadge в интерактивном режиме?"
 ```shell
 docker container ls [--all]
 docker container run --name demo -it alpine
@@ -137,7 +137,7 @@ docker container run --name demo -it alpine
 /# exit 
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как удалить(запущенный) контейнер?"
 ```shell
 docker container ls [--all]
 docker container rm [--force] demo
