@@ -106,7 +106,7 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 ``` 
 
 - [ ] When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "Как посмотреть текущее состояниее системы (images, containers, events, docker versions, etc.)?"
 ```shell
 docker version # TODO: собственные пометки участников для будущего использования в проектах
 docker system info
